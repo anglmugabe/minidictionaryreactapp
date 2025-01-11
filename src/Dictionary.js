@@ -5,27 +5,27 @@ import Photos from "./Photos";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
-	let [keyword, setKeyword] = useState(props.defaultKeyword);
-	let [results, setResults] = useState(null);
-	let [loaded, setLoaded] = useState(false);
-	let [photos, setPhotos] = useState(null);
-
-	function handleDictionaryResponse(response) {
-		setResults(response.data[0]);
-	}
-
-	function handleImagesResponse(response) {
-		setPhotos(response.data.photos);
-	}
+	const [keyword, setKeyword] = useState(props.defaultKeyword);
+	const [results, setResults] = useState(null);
+	const [loaded, setLoaded] = useState(false);
+	const [photos, setPhotos] = useState(null);
 
 	function search() {
-		const apiKey = "cadc0335bc0tc128c364a2674f06oeee1";
+		const apiKey = "cadc0335bc0tc128c364a2674f06oeee";
+
 		let dictionaryApiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
 		axios.get(dictionaryApiUrl).then(handleDictionaryResponse);
 
 		let imagesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${apiKey}`;
 		let headers = { Authorization: `Bearer ${apiKey}` };
 		axios.get(imagesApiUrl, { headers: headers }).then(handleImagesResponse);
+	}
+	function handleDictionaryResponse(response) {
+		setResults(response.data);
+	}
+
+	function handleImagesResponse(response) {
+		setPhotos(response.data.photos);
 	}
 
 	function handleSubmit(event) {
@@ -46,6 +46,7 @@ export default function Dictionary(props) {
 		return (
 			<div className="Dictionary">
 				<section>
+					<h1> Meaning & Definitions of English Words</h1>
 					<form onSubmit={handleSubmit}>
 						<input
 							type="search"
