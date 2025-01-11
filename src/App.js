@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Dictionary from "/Dictionary";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className="container">
+				<h1> Your Pocket Dictionary </h1>
+				<header className="App-header">
+					<Dictionary defaultKeyword="sunset" />
+				</header>{" "}
+				<footer className="App-footer">
+					This website was coded by <a href=""> Angela Mugabe </a>, and is{" "}
+					<a href=""> open-sourced </a>, and hosted on <a href=""> Netlify </a>
+				</footer>
+			</div>
+		</div>
+	);
 }
-
 export default App;
