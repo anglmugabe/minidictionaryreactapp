@@ -1,0 +1,7 @@
+{
+	"editor.inlineSuggest.suppressSuggestions": true,
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"emmet.showSuggestionsAsSnippets": true,
+	"emmet.triggerExpansionOnTab": true,
+	"emmet.useInlineCompletions": true
+}
