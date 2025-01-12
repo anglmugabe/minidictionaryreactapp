@@ -13,7 +13,7 @@ export default function Photos(props) {
 								key={index}
 							>
 								<a
-									href={photo.src.orginal}
+									href={photo.src.original}
 									target="_blank"
 									rel="noreferrer"
 								>
