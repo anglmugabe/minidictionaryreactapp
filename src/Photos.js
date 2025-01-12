@@ -20,6 +20,7 @@ export default function Photos(props) {
 								>
 									<img
 										src={photo.src.landscape}
+										alt="picturelated to word searched"
 										className="img-fluid"
 									/>
 								</a>
