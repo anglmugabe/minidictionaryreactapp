@@ -19,7 +19,6 @@ export default function Photos(props) {
 								>
 									<img
 										src={photo.src.landscape}
-										alt="image related to word you searched"
 										className="img-fluid"
 									/>
 								</a>
