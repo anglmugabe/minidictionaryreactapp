@@ -4,8 +4,10 @@ import Dictionary from ".//Dictionary";
 export default function App() {
 	return (
 		<div className="App">
-			<div className="App-header container">
+			<div>
 				<h1> Your Pocket Dictionary </h1>
+			</div>
+			<div className="App-header container">
 				<main>
 					<Dictionary defaultKeyword="sunset" />
 				</main>{" "}

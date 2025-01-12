@@ -46,7 +46,7 @@ export default function Dictionary(props) {
 		return (
 			<div className="Dictionary">
 				<section>
-					<h1> Meaning & Definitions of English Words</h1>
+					<h1> Let's find your word! </h1>
 					<form onSubmit={handleSubmit}>
 						<input
 							type="search"
@@ -56,9 +56,7 @@ export default function Dictionary(props) {
 							placeholder="Let's find your word..."
 						/>
 					</form>
-					<div className="hint">
-						suggested words: summer, sugar, book, love...
-					</div>
+					<div className="hint">i.e. summer, sugar, book, love...</div>
 				</section>
 				<Results results={results} />
 				<Photos photos={photos} />

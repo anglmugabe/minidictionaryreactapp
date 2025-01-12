@@ -5,12 +5,12 @@ export default function Photos(props) {
 	if (props.photos) {
 		return (
 			<section className="Photos">
-				<div className="row">
+				<div className="photo-gallery">
 					{props.photos.map(function (photo, index) {
 						console.log(photo);
 						return (
 							<div
-								className="col-4"
+								className="photo-item"
 								key={index}
 							>
 								<a
