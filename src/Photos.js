@@ -7,7 +7,6 @@ export default function Photos(props) {
 			<section className="Photos">
 				<div className="photo-gallery">
 					{props.photos.map(function (photo, index) {
-						console.log(photo);
 						return (
 							<div
 								className="photo-item"

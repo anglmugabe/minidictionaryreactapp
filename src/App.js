@@ -13,9 +13,18 @@ export default function App() {
 				</main>{" "}
 				<footer className="App-footer">
 					<small>
-						This website was coded by <a href=""> Angela Mugabe </a>, and is{" "}
-						<a href=""> open-sourced </a>, and hosted on{" "}
-						<a href=""> Netlify </a>
+						This website was coded by{" "}
+						<a href="https://www.shecodes.io/graduates/105285-angela-mugabe">
+							{" "}
+							Angela Mugabe{" "}
+						</a>
+						, and is{" "}
+						<a href="https://github.com/anglmugabe/minidictionaryreactapp">
+							{" "}
+							open-sourced{" "}
+						</a>
+						, and hosted on{" "}
+						<a href="https://minidictionaryreactapp.netlify.app"> Netlify </a>
 					</small>
 				</footer>
 			</div>
