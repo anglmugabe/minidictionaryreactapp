@@ -24,7 +24,7 @@ export default function App() {
 							open-sourced{" "}
 						</a>
 						, and hosted on{" "}
-						<a href="https://minidictionaryreactapp.netlify.app"> Netlify </a>
+						<a href="https://minidictionaryreact.netlify.app"> Netlify </a>
 					</small>
 				</footer>
 			</div>
